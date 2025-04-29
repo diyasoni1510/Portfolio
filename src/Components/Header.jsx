@@ -1,0 +1,257 @@
+import React, { useState } from "react";
+import girl from "../images/girl.jpg";
+import about from "../images/about.jpg";
+import kessel from "../images/kesselmann.png";
+import nute from "../images/nute.png";
+import inrx from "../images/inrx.png";
+import care from "../images/care.png";
+import { FaDownload } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
+import { IoIosMail, IoIosCall } from "react-icons/io";
+import { FaCheckCircle } from "react-icons/fa";
+import { LuArrowUpRight } from "react-icons/lu";
+import Hire from "./Hire";
+
+const Header = () => {
+  const [projectName, setProjectName] = useState("All");
+  return (
+    <>
+      <div
+        className="flex flex-col items-center justify-center text-white text-4xl font-bold py-5"
+        style={{
+          background:
+            "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
+        }}
+      >
+        <div className="flex justify-center items-center text-xs md:text-sm font-normal mx-auto bg-purple-950 rounded-3xl mb-10 md:mb-0">
+          <button className="hover:bg-black duration-500 flex items-center gap-2 rounded-3xl transition text-white px-5 md:px-10 py-3 font-medium">
+            <IoMdCall size={24} />
+            8318015667
+          </button>
+          <button className="hover:bg-black duration-500 flex items-center gap-2 rounded-3xl transition text-white px-5 md:px-10 py-3 font-medium">
+            <IoIosMail size={24} />
+            sonidiya126@gmail.com
+          </button>
+        </div>
+        <div
+          className="grid  grid-cols-2 p-5 md:p-20 justify-between items-center
+        "
+        >
+          <div className="col-span-2 lg:col-span-1  font-light">
+            <h3 className="mb-4 uppercase text-gray-400 font-normal text-lg">
+              full stack web developer
+            </h3>
+            <h1 className="mb-4 font-bold text-5xl md:text-7xl uppercase">
+              Divyanjali
+            </h1>
+            <h1 className="mb-4 font-bold  text-5xl md:text-7xl uppercase">
+              Soni
+            </h1>
+            <div className="mb-4 text-lg md:text-xl border-l pl-2 font-normal text-gray-400 border-gray-600">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Debitis, excepturi?
+              </p>
+            </div>
+          </div>
+          <div className="col-span-2 lg:col-span-1 flex justify-center lg:justify-end items-center relative">
+            <img src={girl} alt="" className="lg:h-[450px] rounded-3xl" />
+            <div className="absolute -bottom-5 bg-purple-700 w-16 h-16 flex justify-center items-center p-6 rounded-full bg-opacity-60 -right-2 md:-right-10">
+              <button className="">
+                <FaDownload size={24} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* about us  */}
+      <div
+        style={{
+          background:
+            "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
+        }}
+      >
+        <div className="flex flex-col md:flex-row justify-center items-start md:items-end gap-5 md:gap-20 relative text-white p-5 md:p-20">
+          <div className="md:absolute -top-10 right-1/3 me-11">
+            <h1 className="text-6xl md:text-8xl right-0">About</h1>
+            <h1 className="text-6xl md:text-8xl right-0">Me</h1>
+          </div>
+          <div className="w-1/3 hidden md:block">
+            <img src={about} alt="" className="rounded-full h-3/4" />
+          </div>
+          <div className="w-full md:w-1/4  font-normal mb-10">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              accusantium omnis ipsa doloribus cum itaque facere quasi nulla
+              ipsum iure?
+            </p>
+            <div className="flex justify-between my-5">
+              <div>
+                <h1 className="text-5xl font-bold">10+</h1>
+                <p>Projects Complete</p>
+              </div>
+              <div>
+                <h1 className="text-5xl font-bold">2+</h1>
+                <p>Years Experience</p>
+              </div>
+            </div>
+            <button
+              className="bg-gradient-to-bl from-violet-600 to-purple-950 hover:from-purple-700 hover:to-violet-950 py-2 font-semibold px-10  mt-10 rounded"
+              // style={{ boxShadow: "0px 0px 5px #fff" }}
+            >
+              Hire me
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* project section  */}
+      <div
+        style={{
+          background:
+            "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
+        }}
+      >
+        <div className="justify-center items-start md:items-end gap-5 md:gap-20 text-white md:pt-0">
+          <h1 className="text-6xl md:text-8xl right-0 md:text-center p-5">
+            Projects
+          </h1>
+          <div className="border-t border-b w-full flex mt-5 md:mt-10 overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:justify-center">
+            <div
+              className="text-xs md:text-base py-2 md:py-5 md:px-10 cursor-pointer hover:bg-gradient-to-tr from-gray-900 to-purple-950 text-center px-5 border-l border-r"
+              onClick={() => setProjectName("All")}
+            >
+              All
+            </div>
+            <div
+              className="text-xs md:text-base py-2 md:py-5 md:px-10 cursor-pointer hover:bg-gradient-to-tr from-gray-900 to-purple-950 text-center px-5 border-l border-r"
+              onClick={() => setProjectName("frontend")}
+            >
+              Frontend Development
+            </div>
+            <div
+              className="text-xs md:text-base py-2 md:py-5 md:px-10 cursor-pointer hover:bg-gradient-to-tr from-gray-900 to-purple-950 text-center px-5 border-l border-r"
+              onClick={() => setProjectName("mern")}
+            >
+              MERN Development
+            </div>
+            <div
+              className="text-xs md:text-base py-2 md:py-5 md:px-10 cursor-pointer hover:bg-gradient-to-tr from-gray-900 to-purple-950 text-center px-5 border-l border-r"
+              onClick={() => setProjectName("statamic")}
+            >
+              Statamic Development
+            </div>
+            <div
+              className="text-xs md:text-base py-2 md:py-5 md:px-10 cursor-pointer hover:bg-gradient-to-tr from-gray-900 to-purple-950 text-center px-5 border-l border-r"
+              onClick={() => setProjectName("backend")}
+            >
+              Backend Development
+            </div>
+          </div>
+
+          <div className="grid grid-cols-4 gap-10 mt-10 px-5 md:px-40">
+            <div
+              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+                projectName === "mern" || projectName === "All"
+                  ? "block"
+                  : "hidden"
+              }`}
+            >
+              {/* Image with blur on hover */}
+              <img
+                src={kessel}
+                alt=""
+                className="w-full object-cover transition duration-300 group-hover:blur-sm"
+              />
+
+              {/* Button appears in center on hover */}
+              <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                  Kesselmann <LuArrowUpRight className="inline" />
+                </span>
+              </button>
+            </div>
+            <div
+              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+                projectName === "mern" || projectName === "All"
+                  ? "block"
+                  : "hidden"
+              }`}
+            >
+              {/* Image with blur on hover */}
+              <img
+                src={nute}
+                alt=""
+                className="w-full h-full object-cover transition duration-300 group-hover:blur-sm"
+              />
+
+              {/* Button appears in center on hover */}
+              <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                  Nute <LuArrowUpRight className="inline" />
+                </span>
+              </button>
+            </div>
+            <div
+              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+                projectName === "mern" || projectName === "All"
+                  ? "block"
+                  : "hidden"
+              }`}
+            >
+              {/* Image with blur on hover */}
+              <img
+                src={care}
+                alt=""
+                className="w-full object-cover transition duration-300 group-hover:blur-sm"
+              />
+
+              {/* Button appears in center on hover */}
+              <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                  Care Concierge <LuArrowUpRight className="inline" />
+                </span>
+              </button>
+            </div>
+            <div
+              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+                projectName === "mern" || projectName === "All"
+                  ? "block"
+                  : "hidden"
+              }`}
+            >
+              {/* Image with blur on hover */}
+              <img
+                src={inrx}
+                alt=""
+                className="w-full object-cover transition duration-300 group-hover:blur-sm"
+              />
+
+              {/* Button appears in center on hover */}
+              <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                  Inrx <LuArrowUpRight className="inline" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* hire me  */}
+      <Hire />
+
+      {/* <div className="relative min-h-screen bg-gradient-to-tr from-black via-purple-900 to-black">
+       
+      </div> */}
+      <footer className="h-16 w-full bg-black backdrop-blur-md bottom-0">
+        <p className="text-white text-center p-4">
+          Made by Love and Passion 🤍
+        </p>
+      </footer>
+    </>
+  );
+};
+
+export default Header;
