@@ -24,14 +24,21 @@ const Header = () => {
         }}
       >
         <div className="flex justify-center items-center text-xs md:text-sm font-normal mx-auto bg-purple-950 rounded-3xl mb-10 md:mb-0">
-          <button className="hover:bg-black duration-500 flex items-center gap-2 rounded-3xl transition text-white px-5 md:px-10 py-3 font-medium">
+          <a
+            href="tel:8318015667"
+            className="hover:bg-black duration-500 flex items-center gap-2 rounded-3xl transition text-white px-5 md:px-10 py-3 font-medium"
+          >
             <IoMdCall size={24} />
             8318015667
-          </button>
-          <button className="hover:bg-black duration-500 flex items-center gap-2 rounded-3xl transition text-white px-5 md:px-10 py-3 font-medium">
+          </a>
+
+          <a
+            href="mailto:sonidiya126@gmail.com"
+            className="hover:bg-black duration-500 flex items-center gap-2 rounded-3xl transition text-white px-5 md:px-10 py-3 font-medium"
+          >
             <IoIosMail size={24} />
             sonidiya126@gmail.com
-          </button>
+          </a>
         </div>
         <div
           className="grid  grid-cols-2 p-5 md:p-20 justify-between items-center
@@ -96,12 +103,13 @@ const Header = () => {
                 <p>Years Experience</p>
               </div>
             </div>
-            <button
+            <a
+              href="#HireMe"
               className="bg-gradient-to-bl from-violet-600 to-purple-950 hover:from-purple-700 hover:to-violet-950 py-2 font-semibold px-10  mt-10 rounded"
               // style={{ boxShadow: "0px 0px 5px #fff" }}
             >
               Hire me
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -152,7 +160,7 @@ const Header = () => {
 
           <div className="grid grid-cols-4 gap-10 mt-10 px-5 md:px-40">
             <div
-              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+              className={`group relative col-span-2 md:col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
                 projectName === "mern" || projectName === "All"
                   ? "block"
                   : "hidden"
@@ -167,13 +175,16 @@ const Header = () => {
 
               {/* Button appears in center on hover */}
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                <a
+                  href="https://kesselmann.co.uk"
+                  className="bg-white text-black px-4 py-2 rounded-full shadow-md"
+                >
                   Kesselmann <LuArrowUpRight className="inline" />
-                </span>
+                </a>
               </button>
             </div>
             <div
-              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+              className={`group relative col-span-2 md:col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
                 projectName === "mern" || projectName === "All"
                   ? "block"
                   : "hidden"
@@ -194,7 +205,7 @@ const Header = () => {
               </button>
             </div>
             <div
-              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+              className={`group relative col-span-2 md:col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
                 projectName === "mern" || projectName === "All"
                   ? "block"
                   : "hidden"
@@ -209,13 +220,16 @@ const Header = () => {
 
               {/* Button appears in center on hover */}
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                <a
+                  href="https://mycareconcierge.com/"
+                  className="bg-white text-black px-4 py-2 rounded-full shadow-md"
+                >
                   Care Concierge <LuArrowUpRight className="inline" />
-                </span>
+                </a>
               </button>
             </div>
             <div
-              className={`group relative col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
+              className={`group relative col-span-2 md:col-span-1 aspect-square rounded-full bg-violet-500 w-full overflow-hidden ${
                 projectName === "mern" || projectName === "All"
                   ? "block"
                   : "hidden"
@@ -230,9 +244,12 @@ const Header = () => {
 
               {/* Button appears in center on hover */}
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                <a
+                  href="https://inrx.io/"
+                  className="bg-white text-black px-4 py-2 rounded-full shadow-md"
+                >
                   Inrx <LuArrowUpRight className="inline" />
-                </span>
+                </a>
               </button>
             </div>
           </div>

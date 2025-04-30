@@ -3,6 +3,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { db } from "../../lib/firebase"; // adjust this import path if needed
 import { collection, addDoc } from "firebase/firestore"; // Firestore methods
 import emailjs from "emailjs-com";
+import toast, { Toaster } from "react-hot-toast";
 
 const Hire = () => {
   const [selectedService, setSelectedService] = useState("");
@@ -27,14 +28,26 @@ const Hire = () => {
   };
 
   const handleSubmit = async () => {
-    console.log(
-      firstName,
-      lastName,
-      email,
-      selectedBudget,
-      selectedService,
-      details
-    );
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !selectedBudget ||
+      !selectedService
+    ) {
+      toast.error("Please fill in all required fields.");
+      return;
+    }
+
+    //  console.log(
+    //    firstName,
+    //    lastName,
+    //    email,
+    //    selectedBudget,
+    //    selectedService,
+    //    details
+    //  );
+
     const userData = {
       firstname: firstName,
       lastname: lastName,
@@ -43,6 +56,7 @@ const Hire = () => {
       email,
       service: selectedService,
     };
+
     try {
       await emailjs.send(
         SERVICE_ID,
@@ -51,13 +65,14 @@ const Hire = () => {
           from_name: `${firstName} ${lastName}`,
           from_email: email,
           message: `
-            Service: ${selectedService}\n
-            Budget: ${selectedBudget}\n
-            Details: ${details}
-          `,
+          Service: ${selectedService}\n
+          Budget: ${selectedBudget}\n
+          Details: ${details}
+        `,
         },
         PUBLIC_KEY
       );
+
       await emailjs.send(
         SERVICE_ID,
         TEMPLATE_ID2,
@@ -69,15 +84,26 @@ const Hire = () => {
         },
         PUBLIC_KEY
       );
+
       console.log("Email sent successfully!");
+      setFirstName("");
+      setLastName("");
+      setSelectedBudget("");
+      setEmail("");
+      setSelectedService("");
+      setDetails("");
+      toast.success("Thank you for contacting us!");
     } catch (err) {
       console.error("Email send error:", err);
+      toast.error("Failed to send email.");
     }
 
     addUser(userData); // ✅ Save to Firestore
   };
+
   return (
     <div
+      id="HireMe"
       style={{
         background:
           "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
@@ -203,32 +229,31 @@ const Hire = () => {
         <div>
           <h3 className="text-4xl my-10">Personal Data</h3>
           <div className="grid grid-cols-3 gap-5">
-            <div className="cpl-span-1">
+            <div className="col-span-3 md:col-span-1">
               <input
                 type="text"
                 name=""
                 placeholder="First Name"
-                className="w-full bg-transparent border-b border-gray-200 py-2"
+                className="w-full bg-transparent border-0 border-b border-gray-200 py-2 focus:outline-none focus:border-b focus:border-white"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
-            <div className="cpl-span-1">
+            <div className="col-span-3 md:col-span-1">
               <input
                 type="text"
-                name=""
-                placeholder="last Name"
-                className="w-full bg-transparent border-b border-gray-200 py-2"
+                placeholder="Last Name"
+                className="w-full bg-transparent border-0 border-b border-gray-200 py-2 focus:outline-none focus:border-b focus:border-white"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
             </div>
-            <div className="cpl-span-1">
+            <div className="col-span-3 md:col-span-1">
               <input
                 type="email"
                 name=""
                 placeholder="Email"
-                className="w-full bg-transparent border-b border-gray-200 py-2"
+                className="w-full bg-transparent border-0 border-b border-gray-200 py-2 focus:outline-none focus:border-b focus:border-white"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -240,7 +265,7 @@ const Hire = () => {
                 type="text"
                 name=""
                 placeholder="Project Details (Optional)"
-                className="w-full bg-transparent border-b border-gray-200 py-2"
+                className="w-full bg-transparent border-0 border-b border-gray-200 py-2 focus:outline-none focus:border-b focus:border-white"
                 value={details}
                 onChange={(e) => setDetails(e.target.value)}
               />
@@ -254,6 +279,7 @@ const Hire = () => {
           </button>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };
