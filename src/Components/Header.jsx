@@ -41,7 +41,7 @@ const Header = () => {
           </a>
         </div>
         <div
-          className="grid  grid-cols-2 p-5 md:p-20 justify-between items-center
+          className="grid  grid-cols-2 p-5 md:p-20 md:pt-16 justify-between items-center
         "
         >
           <div className="col-span-2 lg:col-span-1  font-light">
@@ -54,20 +54,24 @@ const Header = () => {
             <h1 className="mb-4 font-bold  text-5xl md:text-7xl uppercase">
               Soni
             </h1>
-            <div className="mb-4 text-lg md:text-xl border-l pl-2 font-normal text-gray-400 border-gray-600">
+            <div className="mb-4 text-lg border-l pl-2 font-normal text-gray-400 border-gray-600">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Debitis, excepturi?
+                MERN Stack Developer with 2 years of experience in building
+                scalable, high-performance web applications using React,
+                Node.js, and MongoDB.
               </p>
             </div>
           </div>
           <div className="col-span-2 lg:col-span-1 flex justify-center lg:justify-end items-center relative">
             <img src={girl} alt="" className="lg:h-[450px] rounded-3xl" />
-            <div className="absolute -bottom-5 bg-purple-700 w-16 h-16 flex justify-center items-center p-6 rounded-full bg-opacity-60 -right-2 md:-right-10">
-              <button className="">
-                <FaDownload size={24} />
-              </button>
-            </div>
+            <a
+              href="https://drive.google.com/file/d/1O452f2cFgO1IOV00bVNtISQMl9nP-6Gc/view"
+              download
+              target="_blank"
+              className="absolute -bottom-5 bg-purple-700 w-16 h-16 flex justify-center items-center p-2 rounded-full bg-opacity-60 -right-2 md:-right-10 cursor-pointer"
+            >
+              <FaDownload size={24} />
+            </a>
           </div>
         </div>
       </div>
@@ -89,9 +93,10 @@ const Header = () => {
           </div>
           <div className="w-full md:w-1/4  font-normal mb-10">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-              accusantium omnis ipsa doloribus cum itaque facere quasi nulla
-              ipsum iure?
+              As a skilled MERN stack developer, I create dynamic, scalable web
+              applications. With 2+ years of experience in React.js and Node.js,
+              I deliver efficient solutions. Let's work together to bring your
+              ideas to life!
             </p>
             <div className="flex justify-between my-5">
               <div>
@@ -177,7 +182,8 @@ const Header = () => {
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <a
                   href="https://kesselmann.co.uk"
-                  className="bg-white text-black px-4 py-2 rounded-full shadow-md"
+                  target="_blank"
+                  className="bg-white text-black text-xs md:text-base px-4 py-2 rounded-full shadow-md"
                 >
                   Kesselmann <LuArrowUpRight className="inline" />
                 </a>
@@ -199,7 +205,7 @@ const Header = () => {
 
               {/* Button appears in center on hover */}
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
-                <span className="bg-white text-black px-4 py-2 rounded-full shadow-md">
+                <span className="bg-white text-black text-xs md:text-base px-4 py-2 rounded-full shadow-md">
                   Nute <LuArrowUpRight className="inline" />
                 </span>
               </button>
@@ -222,7 +228,8 @@ const Header = () => {
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <a
                   href="https://mycareconcierge.com/"
-                  className="bg-white text-black px-4 py-2 rounded-full shadow-md"
+                  target="_blank"
+                  className="bg-white text-black text-xs md:text-base px-4 py-2 rounded-full shadow-md"
                 >
                   Care Concierge <LuArrowUpRight className="inline" />
                 </a>
@@ -246,7 +253,8 @@ const Header = () => {
               <button className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                 <a
                   href="https://inrx.io/"
-                  className="bg-white text-black px-4 py-2 rounded-full shadow-md"
+                  target="_blank"
+                  className="bg-white text-black text-xs md:text-base px-4 py-2 rounded-full shadow-md"
                 >
                   Inrx <LuArrowUpRight className="inline" />
                 </a>

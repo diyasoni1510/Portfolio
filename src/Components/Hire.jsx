@@ -108,10 +108,22 @@ const Hire = () => {
         background:
           "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
       }}
-      className="pt-14 md:pt-0"
+      className="pt-14 md:pt-10"
     >
       <div className="justify-center items-end gap-20 text-white p-5 md:p-20">
-        <h1 className="text-6xl md:text-8xl right-0">Hire me</h1>
+        <div className="flex flex-col lg:flex-row justify-between gap-10 items-center">
+          <h1 className="text-6xl md:text-8xl right-0 flex-shrink-0">
+            Hire me
+          </h1>
+          <p>
+            I'm ready to collaborate on your next project and help bring your
+            vision to life. With my expertise in MERN stack development, I can
+            create custom solutions that meet your needs. Whether you’re
+            building a new web app or optimizing an existing one, I’m here to
+            help you succeed. Reach out, and let’s discuss how we can make it
+            happen!
+          </p>
+        </div>
         <div>
           <h3 className="text-4xl my-10">Services</h3>
           <div className="grid grid-cols-8 gap-5">
