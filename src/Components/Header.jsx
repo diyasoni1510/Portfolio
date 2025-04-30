@@ -819,9 +819,7 @@ const Header = () => {
 
       <div style={{ backgroundColor: "#E5E5E5" }}>
         <div className="text-[#6366F1] py-10 px-5 md:px-20">
-          <h1 className="text-6xl md:text-8xl font-bold text-center mb-10">
-            Projects
-          </h1>
+          <h1 className="text-6xl md:text-8xl font-bold mb-10">Projects</h1>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
             {/* Project 1 */}
@@ -925,8 +923,8 @@ const Header = () => {
       {/* <div className="relative min-h-screen bg-gradient-to-tr from-black via-purple-900 to-black">
        
       </div> */}
-      <footer className="h-16 w-full bg-blue-500 bg-opacity-10 backdrop-blur-md bottom-0">
-        <p className="text-gray-800 text-center p-4 mb-0">
+      <footer className="w-full bg-[#4F46E5] backdrop-blur-md bottom-0">
+        <p className="text-white text-center p-4 mb-0">
           Made by Love and Passion 🤍
         </p>
       </footer>

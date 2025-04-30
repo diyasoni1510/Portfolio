@@ -293,8 +293,8 @@ const Hire = () => {
       style={{ backgroundColor: "#E5E5E5" }}
     >
       <div className="justify-center items-end gap-20 text-[#6366F1] p-5 md:p-20">
-        <div className="flex flex-col lg:flex-row justify-between gap-10 items-center">
-          <h1 className="text-6xl md:text-8xl right-0 flex-shrink-0">
+        <div className="flex flex-col lg:flex-row justify-between gap-5 lg:gap-10 items-center">
+          <h1 className="text-6xl md:text-8xl flex-shrink-0 font-bold">
             Hire me
           </h1>
           <p className="text-[#374151]">
