@@ -17,11 +17,11 @@ const Header = () => {
   return (
     <>
       <div
-        className="flex flex-col items-center justify-center text-white text-4xl font-bold py-5"
-        style={{
-          background:
-            "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
-        }}
+        className="flex flex-col items-center justify-center text-white text-4xl font-bold py-5 bg-gradient-to-tr from-black via-purple-900 to-black"
+        // style={{
+        //   background:
+        //     "linear-gradient(to right, black 40%, rgb(38 15 58) 55%, rgb(107, 33, 168) 100%)",
+        // }}
       >
         <div className="flex justify-center items-center text-xs md:text-sm font-normal mx-auto bg-purple-950 rounded-3xl mb-10 md:mb-0">
           <a
@@ -130,7 +130,7 @@ const Header = () => {
           <h1 className="text-6xl md:text-8xl right-0 md:text-center p-5">
             Projects
           </h1>
-          <div className="border-t border-b w-full flex mt-5 md:mt-10 overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:justify-center">
+          {/* <div className="border-t border-b w-full flex mt-5 md:mt-10 overflow-x-scroll md:overflow-x-hidden whitespace-nowrap md:justify-center">
             <div
               className="text-xs md:text-base py-2 md:py-5 md:px-10 cursor-pointer hover:bg-gradient-to-tr from-gray-900 to-purple-950 text-center px-5 border-l border-r"
               onClick={() => setProjectName("All")}
@@ -161,7 +161,7 @@ const Header = () => {
             >
               Backend Development
             </div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-4 gap-10 mt-10 px-5 md:px-40">
             <div
