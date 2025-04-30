@@ -496,7 +496,7 @@ const Header = () => {
                 className="w-full object-cover transition duration-300 group-hover:blur-sm"
               />
 
-              <button className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <button className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://kesselmann.co.uk"
                   target="_blank"
@@ -519,7 +519,7 @@ const Header = () => {
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
 
-              <button className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <button className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <span className="bg-white text-black text-xs md:text-base px-4 py-2 rounded-full shadow-md">
                   Nute <LuArrowUpRight className="inline" />
                 </span>
@@ -538,7 +538,7 @@ const Header = () => {
                 className="w-full object-cover transition duration-300 group-hover:blur-sm"
               />
 
-              <button className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <button className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://mycareconcierge.com/"
                   target="_blank"
@@ -561,7 +561,7 @@ const Header = () => {
                 className="w-full object-cover transition duration-300 group-hover:blur-sm"
               />
 
-              <button className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <button className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://inrx.io/"
                   target="_blank"
@@ -641,7 +641,7 @@ const Header = () => {
                 alt="Nute"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <span className="bg-[#3B82F6] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md">
                   Nute <LuArrowUpRight className="inline" />
                 </span>
@@ -659,7 +659,7 @@ const Header = () => {
                 alt="Care Concierge"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://mycareconcierge.com/"
                   target="_blank"
@@ -837,7 +837,7 @@ const Header = () => {
                 alt="Kesselmann"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://kesselmann.co.uk"
                   target="_blank"
@@ -860,7 +860,7 @@ const Header = () => {
                 alt="chaos"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://chaos-v2.vercel.app/"
                   target="_blank"
@@ -883,7 +883,7 @@ const Header = () => {
                 alt="Nute"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <span className="bg-[#3B82F6] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md">
                   Nute <LuArrowUpRight className="inline" />
                 </span>
@@ -903,7 +903,7 @@ const Header = () => {
                 alt="Care Concierge"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://mycareconcierge.com/"
                   target="_blank"
@@ -927,7 +927,7 @@ const Header = () => {
                 alt="Inrx"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://inrx.io/"
                   target="_blank"
@@ -949,7 +949,7 @@ const Header = () => {
                 alt="hahm"
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 opacity-100 transition duration-300">
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
                 <a
                   href="https://nfttrade-theta.vercel.app/"
                   target="_blank"
