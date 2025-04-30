@@ -642,7 +642,7 @@ const Header = () => {
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
               <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
-                <span className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md">
+                <span className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70">
                   Nute <LuArrowUpRight className="inline" />
                 </span>
               </div>
@@ -663,7 +663,7 @@ const Header = () => {
                 <a
                   href="https://mycareconcierge.com/"
                   target="_blank"
-                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
                 >
                   Care Concierge <LuArrowUpRight className="inline" />
                 </a>
@@ -841,7 +841,7 @@ const Header = () => {
                 <a
                   href="https://kesselmann.co.uk"
                   target="_blank"
-                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
                 >
                   Kesselmann <LuArrowUpRight className="inline" />
                 </a>
@@ -864,7 +864,7 @@ const Header = () => {
                 <a
                   href="https://chaos-v2.vercel.app/"
                   target="_blank"
-                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
                 >
                   Chaos <LuArrowUpRight className="inline" />
                 </a>
@@ -884,7 +884,7 @@ const Header = () => {
                 className="w-full h-full object-cover transition duration-300 blur-sm object-top"
               />
               <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
-                <span className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md">
+                <span className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70">
                   Nute <LuArrowUpRight className="inline" />
                 </span>
               </div>
@@ -907,7 +907,7 @@ const Header = () => {
                 <a
                   href="https://mycareconcierge.com/"
                   target="_blank"
-                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
                 >
                   Care Concierge <LuArrowUpRight className="inline" />
                 </a>
@@ -931,7 +931,7 @@ const Header = () => {
                 <a
                   href="https://inrx.io/"
                   target="_blank"
-                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
                 >
                   Inrx <LuArrowUpRight className="inline" />
                 </a>
@@ -953,7 +953,7 @@ const Header = () => {
                 <a
                   href="https://nfttrade-theta.vercel.app/"
                   target="_blank"
-                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
                 >
                   NftTrade <LuArrowUpRight className="inline" />
                 </a>
