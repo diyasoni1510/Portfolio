@@ -46,7 +46,7 @@ export default function TestimonialSlider() {
 
   return (
     <section className="bg-indigo-500 bg-opacity-10 px-6 md:px-20 py-20 relative">
-      <h2 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600 text-center mb-10">
+      <h2 class="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600 text-center mb-10">
         People I’ve worked with <br /> have a few things to say…
       </h2>
 

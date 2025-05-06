@@ -109,7 +109,7 @@ const Portfolio = () => {
         </div>
 
         {/* Hero Section */}
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-20 md:py-10 py-0 items-center h-[80vh]">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-10 px-6 md:px-20 md:py-10 py-0 items-start mt-8 md:mt-0 md:items-center md:h-[80vh]">
           <div className="space-y-4">
             <h2 className="text-3xl lg:text-4xl font-semibold  bg-opacity-50 w-fit text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
               Hi, I’m Divyanjali — a Full Stack MERN Developer and your go-to
@@ -493,13 +493,13 @@ const Portfolio = () => {
         id="faq"
       >
         <div className="absolute md:top-10 top-20 right-[10%]">
-          <img src={faq} alt="FAQ" className="opacity-50 w-28 md:w-36" />
+          <img src={faq} alt="FAQ" className="opacity-50 w-20 md:w-36" />
         </div>
         <div className="max-w-4xl mx-auto text-center mb-10"></div>
 
         <div className="grid grid-cols-5 gap-10 md:gap-20">
           <div className="col-span-5 md:col-span-2">
-            <h2 className="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
               Frequently Asked Questions
             </h2>
             <p>
@@ -580,7 +580,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="col-span-2 md:col-span-1 shadow-md p-10 bg-indigo-500 bg-opacity-10 rounded-xl">
-            <h2 className="text-5xl mb-10">Say Hello!</h2>
+            <h2 className="text-3xl md:text-5xl mb-10">Say Hello!</h2>
             <div className="relative ">
               <input
                 className="px-2 bg-transparent  w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
