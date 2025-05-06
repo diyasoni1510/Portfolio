@@ -23,6 +23,7 @@ import care from "./images/care.png";
 import hahm from "./images/hahm.png";
 import chaos from "./images/chaos.png";
 import { LuArrowRight, LuArrowUpRight } from "react-icons/lu";
+import Contact from "./Components/Contact";
 
 const Portfolio = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -82,9 +83,12 @@ const Portfolio = () => {
               sonidiya126@gmail.com
             </a>
           </div>
-          <button className="mt-2 md:mt-0 text-white shadow-md bg-indigo-500 hover:bg-indigo-700 transition px-6 py-2 rounded-full font-semibold hover:shadow-none">
+          <a
+            href="#contact"
+            className="mt-2 md:mt-0 text-white shadow-md bg-indigo-500 hover:bg-indigo-700 transition px-6 py-2 rounded-full font-semibold hover:shadow-none"
+          >
             CONTACT
-          </button>
+          </a>
         </div>
 
         {/* Navigation */}
@@ -96,13 +100,22 @@ const Portfolio = () => {
             DIVYANJALI SONI
           </h1>
           <nav className="hidden md:flex gap-6 text-sm font-medium">
-            <a className="hover:text-indigo-500 underline-offset-4 cursor-pointer transition font-bold">
+            <a
+              href="#about"
+              className="hover:text-indigo-500 underline-offset-4 cursor-pointer transition font-bold"
+            >
               ABOUT
             </a>
-            <a className="hover:text-indigo-500 underline-offset-4 cursor-pointer transition font-bold">
+            <a
+              href="#projects"
+              className="hover:text-indigo-500 underline-offset-4 cursor-pointer transition font-bold"
+            >
               PROJECTS
             </a>
-            <a className="hover:text-indigo-500 underline-offset-4 cursor-pointer transition font-bold">
+            <a
+              href="#services"
+              className="hover:text-indigo-500 underline-offset-4 cursor-pointer transition font-bold"
+            >
               SERVICES
             </a>
           </nav>
@@ -122,20 +135,28 @@ const Portfolio = () => {
               Let’s turn your ideas into fully working web magic.
             </p>
             <div className="flex gap-5">
-              <div>
+              <a href="https://github.com/diyasoni1510/" target="_blank">
                 <FaGithub size={24} />
-              </div>
+              </a>
 
-              <div>
+              <a href="#" target="_blank">
                 <FaLinkedin size={24} />
-              </div>
-              <div>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1O452f2cFgO1IOV00bVNtISQMl9nP-6Gc/view"
+                target="_blank"
+              >
                 <IoDocumentText size={24} />
-              </div>
+              </a>
             </div>
-            <button className="mt-2 md:mt-0 text-white shadow-md bg-indigo-500 hover:bg-indigo-700 transition px-6 py-2 rounded-full font-semibold hover:shadow-none">
-              HIRE ME
-            </button>
+            <div className="pt-2">
+              <a
+                href="#contact"
+                className=" text-white shadow-md bg-indigo-500 hover:bg-indigo-700 transition px-6 py-2 rounded-full font-semibold hover:shadow-none"
+              >
+                HIRE ME
+              </a>
+            </div>
           </div>
         </section>
 
@@ -373,7 +394,7 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <section className="px-6 md:px-20 py-20 relative bg-white">
+      <section className="px-6 md:px-20 py-20 relative bg-white" id="services">
         <div className="text-[#6366F1] ">
           <div className="grid grid-cols-5 gap-8 md:gap-10">
             <div className="col-span-5 lg:col-span-2">
@@ -543,7 +564,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="px-6 md:px-20 md:py-20 py-10 relative bg-white"
         id="contact"
       >
@@ -634,7 +655,9 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <Contact />
 
       <footer className="bg-indigo-500 text-white p-3 text-center relative">
         Made my love and passion🤍
