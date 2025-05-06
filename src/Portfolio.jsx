@@ -15,6 +15,14 @@ import { SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
 import { RiExchangeLine } from "react-icons/ri";
+import nft from "./images/nftImage2.png";
+import kessel from "./images/kesselmann.png";
+import nute from "./images/nute.png";
+import inrx from "./images/inrx.png";
+import care from "./images/care.png";
+import hahm from "./images/hahm.png";
+import chaos from "./images/chaos.png";
+import { LuArrowRight, LuArrowUpRight } from "react-icons/lu";
 
 const Portfolio = () => {
   const [openIndex, setOpenIndex] = useState(null);
@@ -150,7 +158,7 @@ const Portfolio = () => {
       {/* </div> */}
 
       <section
-        class="px-6 md:py-20 py-10 md:px-20 bg-transparent text-gray-800 relative"
+        class="px-6 md:py-20 py-10 md:px-20 text-gray-800 relative bg-white"
         id="about"
       >
         <div class="max-w-4xl mx-auto text-center">
@@ -180,7 +188,192 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className="px-6 md:px-20 pb-20 pt-10 relative">
+      {/* <section
+        className="px-6 md:px-20 md:py-20 py-10 relative bg-white"
+        id="projects"
+      >
+        <div class="max-w-4xl mx-auto text-center mb-5">
+          <h2 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
+            Projects
+          </h2>
+        </div>
+        <div className="bg-indigo-500 bg-opacity-10 grid grid-cols-5 px-20 py-10 rounded-2xl justify-center items-center ">
+          <div className="col-span-2">
+            <h3 className="text-3xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
+              NFT Trade
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              natus, laudantium aut veniam ex atque nesciunt sapiente animi ut,
+              tempora dicta doloremque, laboriosam perferendis quibusdam. Nobis,
+              est! Inventore, pariatur eveniet.
+            </p>
+            <button className="mt-10 text-white shadow-md bg-indigo-500 hover:bg-indigo-700 transition px-6 py-2 rounded-full font-semibold hover:shadow-none uppercase">
+              See this project
+            </button>
+          </div>
+          <div className="col-span-3 flex justify-end items-center ">
+            <img
+              src={nft}
+              alt=""
+              width={400}
+              className="hover:opacity-50 duration-200 transition-all cursor-pointer"
+            />
+          </div>
+        </div>
+        <div className="bg-indigo-500 bg-opacity-10 grid grid-cols-5 px-20 py-10 rounded-2xl justify-center items-center mt-10">
+          <div className="col-span-3 flex justify-start items-center ">
+            <img
+              src={nft}
+              alt=""
+              width={400}
+              className="hover:opacity-50 duration-200 transition-all cursor-pointer"
+            />
+          </div>
+          <div className="col-span-2">
+            <h3 className="text-3xl font-bold mb-5 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
+              NFT Trade
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+              natus, laudantium aut veniam ex atque nesciunt sapiente animi ut,
+              tempora dicta doloremque, laboriosam perferendis quibusdam. Nobis,
+              est! Inventore, pariatur eveniet.
+            </p>
+            <button className="mt-10 text-white shadow-md bg-indigo-500 hover:bg-indigo-700 transition px-6 py-2 rounded-full font-semibold hover:shadow-none uppercase">
+              See this project
+            </button>
+          </div>
+        </div>
+      </section> */}
+
+      <div
+        className="px-6 md:px-20 md:py-20 py-10 relative bg-white"
+        id="projects"
+      >
+        <div className="text-[#6366F1]">
+          {/* <h1 className="text-6xl md:text-8xl font-bold mb-10">Projects</h1> */}
+          <h2 class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-indigo-600">
+            Projects
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16">
+            {/* Project 1 */}
+            <div
+              className={`group relative aspect-square rounded-2xl overflow-hidden block`}
+            >
+              <img
+                src={kessel}
+                alt="Kesselmann"
+                className="w-full h-full object-cover transition duration-300 blur-sm object-top"
+              />
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
+                <a
+                  href="https://kesselmann.co.uk"
+                  target="_blank"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
+                >
+                  Kesselmann <LuArrowUpRight className="inline" />
+                </a>
+              </div>
+            </div>
+
+            <div
+              className={`group relative aspect-square rounded-2xl overflow-hidden block`}
+            >
+              <img
+                src={chaos}
+                alt="chaos"
+                className="w-full h-full object-cover transition duration-300 blur-sm object-top"
+              />
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
+                <a
+                  href="https://chaos-v2.vercel.app/"
+                  target="_blank"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
+                >
+                  Chaos <LuArrowUpRight className="inline" />
+                </a>
+              </div>
+            </div>
+
+            <div
+              className={`group relative aspect-square rounded-2xl overflow-hidden block`}
+            >
+              <img
+                src={nute}
+                alt="Nute"
+                className="w-full h-full object-cover transition duration-300 blur-sm object-top"
+              />
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
+                <span className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70">
+                  Nute <LuArrowUpRight className="inline" />
+                </span>
+              </div>
+            </div>
+
+            {/* Project 3 */}
+            <div
+              className={`group relative aspect-square rounded-2xl overflow-hidden block`}
+            >
+              <img
+                src={care}
+                alt="Care Concierge"
+                className="w-full h-full object-cover transition duration-300 blur-sm object-top"
+              />
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
+                <a
+                  href="https://mycareconcierge.com/"
+                  target="_blank"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
+                >
+                  Care Concierge <LuArrowUpRight className="inline" />
+                </a>
+              </div>
+            </div>
+
+            {/* Project 4 */}
+            <div
+              className={`group relative aspect-square rounded-2xl overflow-hidden block`}
+            >
+              <img
+                src={inrx}
+                alt="Inrx"
+                className="w-full h-full object-cover transition duration-300 blur-sm object-top"
+              />
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
+                <a
+                  href="https://inrx.io/"
+                  target="_blank"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
+                >
+                  Inrx <LuArrowUpRight className="inline" />
+                </a>
+              </div>
+            </div>
+            <div
+              className={`group relative aspect-square rounded-2xl overflow-hidden block`}
+            >
+              <img
+                src={hahm}
+                alt="hahm"
+                className="w-full h-full object-cover transition duration-300 blur-sm object-top"
+              />
+              <div className="absolute inset-0 flex items-center justify-center  opacity-100 transition duration-300">
+                <a
+                  href="https://nfttrade-theta.vercel.app/"
+                  target="_blank"
+                  className="bg-[#6366F1] text-[#FFFFFF] text-xs md:text-base px-4 py-2 rounded-full shadow-md bg-opacity-70"
+                >
+                  NftTrade <LuArrowUpRight className="inline" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section className="px-6 md:px-20 py-20 relative bg-white">
         <div className="text-[#6366F1] ">
           <div className="grid grid-cols-5 gap-8 md:gap-10">
             <div className="col-span-5 lg:col-span-2">
@@ -295,7 +488,10 @@ const Portfolio = () => {
 
       <TestimonialSlider />
 
-      <section className="px-6 md:px-20 md:py-20 py-10 relative" id="faq">
+      <section
+        className="px-6 md:px-20 md:py-20 py-10 relative bg-white"
+        id="faq"
+      >
         <div className="absolute md:top-10 top-20 right-[10%]">
           <img src={faq} alt="FAQ" className="opacity-50 w-28 md:w-36" />
         </div>
@@ -347,7 +543,10 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section className="px-6 md:px-20 md:py-20 py-10 relative " id="contact">
+      <section
+        className="px-6 md:px-20 md:py-20 py-10 relative bg-white"
+        id="contact"
+      >
         <div className="grid grid-cols-2 gap-10 md:gap-24">
           <div className="col-span-2 md:col-span-1 space-y-4 ">
             <p className="text-indigo-600 font-semibold">LET’S CONNECT</p>
@@ -384,10 +583,11 @@ const Portfolio = () => {
             <h2 className="text-5xl mb-10">Say Hello!</h2>
             <div className="relative ">
               <input
-                className="px-2 bg-transparent text-white w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
+                className="px-2 bg-transparent  w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
                 type="text"
                 name="Name"
                 placeholder="Enter your name*"
+                required
               />
               <FaRegUser
                 size={22}
@@ -396,10 +596,11 @@ const Portfolio = () => {
             </div>
             <div className="relative">
               <input
-                className="px-2 bg-transparent text-white w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
+                className="px-2 bg-transparent  w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
                 type="email"
                 name="email"
                 placeholder="Enter your email*"
+                required
               />
               <MdMailOutline
                 size={24}
@@ -408,7 +609,7 @@ const Portfolio = () => {
             </div>
             <div className="relative">
               <input
-                className="px-2 bg-transparent text-white w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
+                className="px-2 bg-transparent  w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
                 type="tel"
                 name="Phone"
                 placeholder="Enter your phone number"
@@ -420,7 +621,7 @@ const Portfolio = () => {
             </div>
             <div>
               <input
-                className="px-2 bg-transparent text-white w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
+                className="px-2 bg-transparent  w-full py-2 mb-10 border-0 border-b-2 border-gray-300 hover:border-black focus:border-black outline-none transition-all duration-200"
                 type="text"
                 name="message"
                 placeholder="Message"
